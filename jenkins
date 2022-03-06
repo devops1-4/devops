@@ -1,11 +1,11 @@
 pipiline{
   agent any
   stages[
-     stage ("hello")
+     stage ("git checkout")
      {
         steps
      {
-     echo "hello"
+     git 'https://github.com/devops1-4/devops.git'
      }
      }
      stage ("devops")
